@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Experience | IT Portfolio</title>
+    <meta name="description" content="Technical skills including Linux, Server Management, System Administration, and Microsoft Office.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .skill-group { margin-bottom: 3rem; }
+        .skill-group h2 { color: var(--primary-red); border-bottom: 2px solid var(--primary-blue); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .skill-bar { background: #E0E0E0; border-radius: 8px; overflow: hidden; height: 12px; margin-top: 0.5rem; }
+        .skill-level { background: linear-gradient(90deg, var(--primary-blue), var(--primary-red)); height: 100%; border-radius: 8px; }
+        .skill-item { margin-bottom: 1.5rem; }
+    </style>
+</head>
+<body>
+    <custom-header></custom-header>
+    
+    <main class="container">
+        <h1 style="font-size: 3rem; text-align: center; margin-bottom: 3rem; color: var(--text-black);">
+            Technical <span style="color: var(--primary-blue);">Expertise</span>
+        </h1>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem;">
+            
+            <section class="skill-group card">
+                <h2>🐧 Linux & OS</h2>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Ubuntu / Debian</span><span>95%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>RHEL / CentOS</span><span>85%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Bash Shell Scripting</span><span>90%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+            </section>
+            
+            <section class="skill-group card">
+                <h2>⚙️ System Administration</h2>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Active Directory / LDAP</span><span>90%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Network Config & Security</span><span>85%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Backup & Disaster Recovery</span><span>80%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+            </section>
+
+            <section class="skill-group card">
+                <h2>🗄️ Server Management</h2>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Apache / Nginx Web Servers</span><span>95%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>VMware & Virtualization</span><span>85%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Cloud Platforms (AWS/Azure)</span><span>75%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                </div>
+            </section>
+            
+            <section class="skill-group card">
+                <h2>🏢 Microsoft Office Package</h2>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Office 365 Admin Center</span><span>95%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>Exchange Online / Outlook</span><span>90%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div style="display: flex; justify-content: space-between; font-weight: 600;"><span>SharePoint & Teams Config</span><span>85%</span></div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="js/components.js"></script>
+</body>
+</html>

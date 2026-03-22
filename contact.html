@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | IT Portfolio</title>
+    <meta name="description" content="Get in touch for infrastructure, server management, and system administration services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .form-group label {
+            font-weight: 600;
+        }
+        .form-group input, .form-group textarea {
+            padding: 1rem;
+            border: 1px solid #CCC;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+    <custom-header></custom-header>
+    
+    <main class="container">
+        <h1 style="font-size: 3rem; text-align: center; margin-bottom: 1rem; color: var(--text-black);">
+            Let's <span style="color: var(--primary-red);">Connect</span>
+        </h1>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto; font-size: 1.1rem;">
+            Whether you need a full network overhaul or someone to manage your Linux servers, I'm here to help. Reach out and let's optimize your IT layout.
+        </p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: start;">
+            
+            <!-- Contact Info -->
+            <div class="card" style="background-color: var(--bg-light); border-top: 4px solid var(--primary-red);">
+                <h2 style="margin-bottom: 2rem; color: var(--primary-red);">Contact Information</h2>
+                <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                    <div style="font-size: 1.5rem;">📧</div>
+                    <div>
+                        <strong style="display: block;">Email</strong>
+                        <a href="mailto:contact@itstudent.example.com" style="color: var(--text-black);">contact@itstudent.example.com</a>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                    <div style="font-size: 1.5rem;">📱</div>
+                    <div>
+                        <strong style="display: block;">Phone</strong>
+                        <span style="color: var(--text-black);">+1 (555) 123-4567</span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                    <div style="font-size: 1.5rem;">📍</div>
+                    <div>
+                        <strong style="display: block;">Location</strong>
+                        <span style="color: var(--text-black);">Remote / Available Worldwide</span>
+                    </div>
+                </div>
+                <div style="margin-top: 3rem;">
+                    <strong style="display: block; margin-bottom: 1rem;">Follow Me</strong>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" class="btn btn-blue" style="padding: 0.5rem 1rem;">LinkedIn</a>
+                        <a href="#" class="btn" style="padding: 0.5rem 1rem; background-color: #333; border-color: #333;">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="card">
+                <h2 style="margin-bottom: 2rem;">Send a Request</h2>
+                <!-- Fake form endpoint since it's a static site -->
+                <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Message feature ready to integrate with form endpoints!');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message / Request Details</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="I need help configuring a new Ubuntu web server..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-blue" style="margin-top: 1rem; width: 100%;">Submit Inquiry</button>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="js/components.js"></script>
+</body>
+</html>

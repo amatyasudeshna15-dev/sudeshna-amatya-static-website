@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Portfolio | System Administration & Server Management</title>
+    <meta name="description" content="Portfolio of an IT Student specializing in System Administration, Linux, Server Management, and Microsoft Office.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <!-- Dynamically injected Navbar -->
+    <custom-header></custom-header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" style="background-color: var(--bg-light); padding: 6rem 0; border-bottom: 1px solid #E0E0E0;">
+            <div class="container" style="padding: 0;">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--text-black); line-height: 1.2;">
+                    Building & Securing<br />
+                    <span style="color: var(--primary-red);">Robust IT Infrastructure</span>
+                </h1>
+                <p style="font-size: 1.25rem; max-width: 650px; margin-bottom: 2.5rem;">
+                    Passionate IT student specializing in modern System Administration,
+                    Linux server environments, advanced Server Management, and enterprise Microsoft Office solutions.
+                </p>
+                <div class="hero-buttons" style="display: flex; gap: 1rem;">
+                    <a href="skills.html" class="btn">View My Expertise</a>
+                    <a href="contact.html" class="btn btn-blue">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brief Features Overview -->
+        <section class="features-section container">
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: var(--text-black);">Core Competencies</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚙️</div>
+                    <h3 style="color: var(--text-black);">System Administration</h3>
+                    <p>Ensuring absolute high-availability, infrastructure monitoring, robust backup solutions, and resolving critical network issues seamlessly.</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🐧</div>
+                    <h3 style="color: var(--text-black);">Linux Mastery</h3>
+                    <p>Proficient via terminal environments: mastering configuration on Ubuntu, Debian, CentOS, and Red Hat distributions for optimal server security.</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🗄️</div>
+                    <h3 style="color: var(--text-black);">Server Management</h3>
+                    <p>Deploying, configuring, updating and closely tracking local & cloud-based IT servers across both Windows and Open-source architectures.</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏢</div>
+                    <h3 style="color: var(--text-black);">Microsoft Office</h3>
+                    <p>Full suite administration and user support including Azure AD integrations, Outlook configurations, comprehensive Word/Excel formatting and more.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section style="background: linear-gradient(135deg, var(--primary-blue), #1565C0); padding: 5rem 0; text-align: center; color: white;">
+            <div class="container" style="padding: 0;">
+                <h2 style="color: var(--bg-white); margin-bottom: 1.5rem;">Ready to upgrade your IT Infrastructure?</h2>
+                <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem; max-width: 600px; margin: 0 auto 2.5rem auto;">
+                    I am actively seeking projects and roles where I can apply my system administration skills. Let's discuss how I can bring value to your organization.
+                </p>
+                <a href="contact.html" class="btn" style="background-color: var(--bg-white); color: var(--primary-blue); border-color: var(--bg-white);">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dynamically injected Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Web Components Logic -->
+    <script src="js/components.js"></script>
+</body>
+</html>
